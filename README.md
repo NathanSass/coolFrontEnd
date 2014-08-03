@@ -4,6 +4,7 @@
 A collection of useful frontend design patterns / tricks.
 
 ##leaderList
+Check it out [here](http://nathansass.github.io/leaderList "leaderList")
 
 Ever wanted to make a list like:
 
