@@ -1,3 +1,10 @@
+body{
+	font-family: 'Krona One', sans-serif;
+	background-color: rgb(25, 3, 31);
+	color: rgb(62, 74, 112);
+}
+
+
 div{
 	width: 50%;
   height: 50%;
