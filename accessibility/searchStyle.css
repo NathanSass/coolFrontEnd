@@ -1,0 +1,15 @@
+body{
+	background-color: grey;
+}
+.container{
+	margin-top: 10%;
+	margin-left: 30%;
+}
+.icon-box{
+	display: inline-block;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+i.fa.fa-search{
+	font-size: 30px;
+}
