@@ -1,15 +1,48 @@
 body{
-	background-color: grey;
+	background-color: rgb(24, 29, 40);
+}
+
+input{
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	-webkit-writing-mode: horizontal-tb;
+	-webkit-appearance: textfield;
+	margin: 0;
 }
 .container{
 	margin-top: 10%;
 	margin-left: 30%;
+
 }
 .icon-box{
 	display: inline-block;
 	background-color: rgba(255, 255, 255, .5);
+	padding: 10px;
+	margin: 0;
 }
 
-i.fa.fa-search{
-	font-size: 30px;
+.left-icon{
+	border-radius: 12px 0px 0px 12px;
+}
+
+.right-icon{
+	border-radius: 0px 12px 12px 0px;
+}
+
+.search-box{
+	font-size: 16px;
+	color: black;
+	border: none;
+	border-bottom: none;
+	position: relative;
+	top: -2px;
+	background-color: rgba(255, 255, 255, .5);
+	height: 44px;
+	outline: none;
+	width: 70%; /*need a better solution*/
 }
