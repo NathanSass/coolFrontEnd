@@ -1,0 +1,11 @@
+a{
+	display: block;
+	padding-bottom: 2em;
+}
+#before::before{
+	content: "before";
+}
+
+#after::after{
+	content: "after";
+}
