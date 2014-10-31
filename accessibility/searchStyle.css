@@ -39,7 +39,7 @@ input{
 	outline: none;
 	/*width: 100%; need a better solution*/
 	position: relative;
-	bottom: 31px;
+	bottom: 2px;
 
 }
 .input-container{
@@ -50,9 +50,15 @@ input{
 }
 .search-bar{
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 .results{
-	width: 100%;
-	background-color: red;
-	height: 300px
+	width: 99.5%;
+	background-color: rgba(255, 255, 255, .5);
+	height: 300px;
+	position: relative;
+	bottom: 46px;
+	border-radius: 12px;
+	z-index: 0;
 }
