@@ -14,11 +14,6 @@ input{
 	-webkit-appearance: textfield;
 	margin: 0;
 }
-.container{
-	margin-top: 10%;
-	margin-left: 30%;
-
-}
 .icon-box{
 	display: inline-block;
 	background-color: rgba(255, 255, 255, .5);
@@ -34,15 +29,30 @@ input{
 	border-radius: 0px 12px 12px 0px;
 }
 
-.search-box{
+.search-input{
 	font-size: 16px;
 	color: black;
 	border: none;
 	border-bottom: none;
-	position: relative;
-	top: -2px;
 	background-color: rgba(255, 255, 255, .5);
 	height: 44px;
 	outline: none;
-	width: 70%; /*need a better solution*/
+	/*width: 100%; need a better solution*/
+	position: relative;
+	bottom: 31px;
+
+}
+.input-container{
+	width: 70%;
+	display: inline-block;
+	position: relative;
+	top: 29px;
+}
+.search-bar{
+	width: 100%;
+}
+.results{
+	width: 100%;
+	background-color: red;
+	height: 300px
 }
