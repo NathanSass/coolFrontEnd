@@ -1,15 +1,40 @@
-function flexInputArea(){
-	var container = $(".search-bar").width();
-	var widgets = $(".left-icon").width() + $(".right-icon").width();
-	$(".search-input")[0].style.width = ((container - widgets - 41) + "px");
-}
+var WIDGET = {
+	flexInputArea: function(){
+		var container = $(".search-bar").width();
+		var widgets = $(".left-icon").width() + $(".right-icon").width();
+		$(".search-input")[0].style.width = ((container - widgets - 41) + "px");
+	},
 
+	focusInputArea: function(e){
+		WIDGET._changeBackgroundColors("rgba(255, 255, 255, 0)");
+		WIDGET._showResultsArea();
+	},
+	resetSearchBar: function(e){
+		$('.results').hide();
+		$('.search-input').css("border-bottom", "none");
+		WIDGET._changeBackgroundColors("rgba(255, 255, 255, .5)");
+
+	},
+
+	_changeBackgroundColors: function(color){
+		var widgets = [$('.search-input'), $('.left-icon'), $('.right-icon')];
+		for(var i = 0; i < widgets.length; i++){
+			widgets[i][0].style.background = color;
+		}
+	},
+	_showResultsArea: function(){
+		$('.results').show();
+		$('.search-input').css("border-bottom", "1px solid grey");
+	}
+};
 
 $(function() {
-	flexInputArea();
+	WIDGET.flexInputArea();
+	$(document).on("click", ".search-input", WIDGET.focusInputArea);
+	$(document).on("mouseout", ".results", WIDGET.resetSearchBar);
 
 
   window.onresize=function(){
-  	flexInputArea();
+  	WIDGET.flexInputArea();
 	};
 });
