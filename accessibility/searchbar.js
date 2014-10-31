@@ -32,7 +32,6 @@ $(function() {
 	$(document).on("click", ".search-input", WIDGET.focusInputArea);
 	$(document).on("mouseleave", ".results-container", WIDGET.resetSearchBar); //really need a scenario for mouseout on input as well
 
-
   window.onresize=function(){
   	WIDGET.flexInputArea();
 	};
