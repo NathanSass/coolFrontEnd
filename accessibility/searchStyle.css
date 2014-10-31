@@ -54,14 +54,17 @@ input{
 	position: relative;
 	z-index: 1;
 }
-.results{
+.results-container{
 	width: 99.5%;
 	display: none;
 	background: rgba(255, 255, 255, 1);
-	height: 300px;
 	position: relative;
 	bottom: 46px;
 	border: 1px rgb(111, 111, 111) solid;
 	border-radius: 12px;
 	z-index: 0;
+}
+
+.results{
+	margin: 58px 27px 20px 39px
 }

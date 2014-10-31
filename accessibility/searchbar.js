@@ -10,10 +10,9 @@ var WIDGET = {
 		WIDGET._showResultsArea();
 	},
 	resetSearchBar: function(e){
-		$('.results').hide();
+		$('.results-container').hide();
 		$('.search-input').css("border-bottom", "none");
 		WIDGET._changeBackgroundColors("rgba(255, 255, 255, .5)");
-
 	},
 
 	_changeBackgroundColors: function(color){
@@ -23,7 +22,7 @@ var WIDGET = {
 		}
 	},
 	_showResultsArea: function(){
-		$('.results').show();
+		$('.results-container').show();
 		$('.search-input').css("border-bottom", "1px solid grey");
 	}
 };
@@ -31,7 +30,7 @@ var WIDGET = {
 $(function() {
 	WIDGET.flexInputArea();
 	$(document).on("click", ".search-input", WIDGET.focusInputArea);
-	$(document).on("mouseout", ".results", WIDGET.resetSearchBar);
+	$(document).on("mouseleave", ".results-container", WIDGET.resetSearchBar); //really need a scenario for mouseout on input as well
 
 
   window.onresize=function(){
