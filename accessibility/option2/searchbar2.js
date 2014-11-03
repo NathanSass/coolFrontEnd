@@ -2,7 +2,7 @@ var WIDGET = {
 	flexInputArea: function(){
 		var container = $(".search-bar").width();
 		var widgets = $(".left-icon").width() + $(".right-icon").width();
-		$(".search-input")[0].style.width = ((container - widgets - 41) + "px");
+		$(".search-input")[0].style.width = ((container - widgets - 48) + "px"); //was 41
 	},
 
 	focusInputArea: function(e){
