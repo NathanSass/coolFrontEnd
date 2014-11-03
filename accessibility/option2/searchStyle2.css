@@ -52,7 +52,7 @@ input{
 	width: 99.5%;
 	/*display: none;*/
 	height: 44px;
-	background: rgba(255, 255, 255, 1);
+	background: rgba(255, 255, 255, 0.5);
 	position: relative;
 	bottom: 46px;
 	border: 1px rgb(111, 111, 111) solid;
