@@ -68,3 +68,27 @@ input{
 .results{
 	margin: 58px 27px 20px 39px
 }
+
+.accessible-text,
+.accessible-text a,
+.accessible-text a:link,
+.accessible-text a:visited,
+.accessible-text a:hover,
+.accessible-text a:active,
+.accessible-text a:focus {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  /*font-size: 0 !important;
+  width: 0;
+  height: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  z-index: -1000 !important;
+  left: -20000px !important;
+*/}
