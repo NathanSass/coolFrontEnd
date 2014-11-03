@@ -16,7 +16,7 @@ input{
 }
 .icon-box{
 	display: inline-block;
-	background: rgba(255, 255, 255, .5);
+	background: none;
 	padding: 10px;
 	margin: 0;
 }
@@ -34,7 +34,7 @@ input{
 	color: black;
 	border: none;
 	border-bottom: none;
-	background: rgba(255, 255, 255, .5);
+	background: none;
 	height: 44px;
 	outline: none;
 	position: relative;
@@ -43,12 +43,6 @@ input{
 .container{
 	margin-top: 50px
 }
-/*.input-container{
-	width: 70%;
-	display: inline-block;
-	position: relative;
-	top: 29px;
-}*/
 .search-bar{
 	width: 100%;
 	position: relative;
@@ -56,7 +50,8 @@ input{
 }
 .results-container{
 	width: 99.5%;
-	display: none;
+	/*display: none;*/
+	height: 44px;
 	background: rgba(255, 255, 255, 1);
 	position: relative;
 	bottom: 46px;
@@ -66,5 +61,6 @@ input{
 }
 
 .results{
-	margin: 58px 27px 20px 39px
+	margin: 58px 27px 20px 39px;
+	display: none;
 }
