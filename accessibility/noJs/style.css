@@ -1,5 +1,10 @@
+
+body{
+	background: black;
+}
 .container{
-	background: red;
+	background: grey;
+	margin-top: 50px
 }
 
 .one{
