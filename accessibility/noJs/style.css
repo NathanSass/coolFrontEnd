@@ -1,0 +1,47 @@
+
+body{
+	background: black;
+}
+.container{
+	background: grey;
+	margin-top: 50px
+}
+
+.one{
+	width: 40px;
+	display: inline-block;
+}
+
+.two{
+	width: 70%;
+	display: inline-block;
+}
+
+.three{
+	width: 40px;
+	display: inline-block;
+}
+
+.icon-box{
+	background: rgba(255, 255, 255, .5);
+	padding: 10px;
+	margin: 0;
+}
+.left-icon{
+	border-radius: 12px 0px 0px 12px;
+}
+.right-icon{
+	border-radius: 0px 12px 12px 0px;
+}
+.search-input{
+	font-size: 16px;
+	color: black;
+	border: none;
+	border-bottom: none;
+	background: rgba(255, 255, 255, .5);
+	height: 44px;
+	outline: none;
+	position: relative;
+	bottom: 2px;
+	width: 100%;
+}

@@ -16,13 +16,10 @@ I use two cool css tools to build it: the element + element selector and the css
 
 ##Ultra Accessible Search Bar
 
-In progress!!
+It's nothing fancy. I was just experimenting with better ways to build search bars.
 
 Check it out [here](http://nathansass.github.io/coolFrontEnd/accessibility/searchbar.html "search bar")
 Bugs:
 - renders irregularly in Firefox
 
 Version2 [here](http://nathansass.github.io/coolFrontEnd/accessibility/option2/searchbar2.html "search bar")
-
-
-This is a search bar that is extremely sensitive to ADA requirements and should work in all browsers include IE8!
