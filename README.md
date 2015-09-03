@@ -23,3 +23,7 @@ Bugs:
 - renders irregularly in Firefox
 
 Version2 [here](http://nathansass.github.io/coolFrontEnd/accessibility/option2/searchbar2.html "search bar")
+
+##Getters and Setters
+
+Really cool design pattern for controlling value creation and retrieval. 
