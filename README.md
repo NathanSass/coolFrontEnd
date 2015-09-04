@@ -26,4 +26,4 @@ Version2 [here](http://nathansass.github.io/coolFrontEnd/accessibility/option2/s
 
 ##Getters and Setters
 
-Really cool design pattern for controlling value creation and retrieval. 
+Really cool design pattern for controlling value creation and retrieval. *Build out this example more in the future.
