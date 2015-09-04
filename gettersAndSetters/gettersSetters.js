@@ -8,7 +8,7 @@ var instance = {
 	reset: function(value) {
 		this._items = value;
 	},
-	get items(){
+	get items(){ // reference as instance.items
 		return this._items;
 	},
 	set item(value) {
@@ -32,9 +32,6 @@ var pokedex = [
 
 instance.reset(pokedex);
 
-// this will not make a change in _items, need to do it with getters and setters
-var squirtle = instance.items[1].caught = true;
-
 pokedex.forEach(function(pokemon){
 
 	Object.defineProperty(pokemon, 'caught', {
@@ -48,4 +45,13 @@ pokedex.forEach(function(pokemon){
 		}
 	});
 
-})
+});
+
+var abra = {
+	name: 'abra',
+	type: 'psychic'
+};
+
+instance.item = abra;
+
+console.log(instance.items.length === 3);
